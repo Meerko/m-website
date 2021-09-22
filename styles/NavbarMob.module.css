@@ -1,0 +1,41 @@
+@media (min-width: 769px){ .navMob{display: none;} }
+@media (max-width: 768px){
+  .navMob {
+    height: 80px;
+    width: 100%;
+    bottom: 0;
+    padding: 10px;
+    border-radius: 25px 25px 0 0;
+    position: fixed;
+    background-color: rgba(25, 25, 35, 0.8);
+    backdrop-filter: blur(5px);
+    font-size: 36px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Space Grotesk', sans-serif;
+  }
+
+  .navMob ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+  }
+
+  .navMob ul li {
+    margin: 0 12px;
+    padding: 5px;
+    margin-bottom: 0;
+  }
+
+  .navMob img{
+    position: relative;
+    width: 70px;
+    min-width: 70px;
+    border-radius: 100px;
+  }
+
+}
