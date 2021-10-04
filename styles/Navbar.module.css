@@ -10,6 +10,9 @@
     align-items: center;
     justify-content: space-between;
     font-family: 'Space Grotesk', sans-serif;
+    background-color: rgba(25, 25, 35, 0.8);
+    backdrop-filter: blur(5px);
+    z-index: 100;
   }
 
   .nav ul {

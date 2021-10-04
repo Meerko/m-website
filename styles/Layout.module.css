@@ -20,20 +20,21 @@
 .button{
   font-size: 1.7rem;
   display: flex;
-  height: 55px;
+  height: 42px;
 }
 .button a{  
   display: flex;
   align-items: center;
-  margin-left: 28px;
+  margin-left: 20px;
   transition: ease-in-out .3s;
+  letter-spacing: 0.25rem;
 }
 
 .button::before{
   content: ' ';
   position: absolute;
-  height: 50px;
-  width: 50px;
+  height: 40px;
+  width: 40px;
   border: solid 2px #baff29;
   border-radius: 100px;
 
@@ -47,6 +48,7 @@
   max-width: 1350px;
   padding: 0 30px;
   margin: 0 auto;
+  align-items: center;
 }
 .grid .col{width: 100%;}
 

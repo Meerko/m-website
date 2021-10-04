@@ -2,8 +2,10 @@ import Link from 'next/Link'
 import Image from 'next/image'
 import Logo from '../public/img/mirko-maggiore-logo.png'
 import navbarStyles from '../styles/Navbar.module.css'
+import { useRouter } from 'next/router'
 
 const Navbar = () => {
+    let router = useRouter();
     return (
         <div className={navbarStyles.nav}>
             <div className={navbarStyles.logomenu}>
@@ -21,7 +23,16 @@ const Navbar = () => {
                     <li>
                         <Link href='/about'>Contact</Link>
                     </li>
+
+                    {router.locales.map(locale =>(
+                        <li key={locale}> 
+                                <Link href={router.asPath} locale={locale}> 
+                                    {locale}
+                                </Link> 
+                        </li>
+                    ))}
                 </ul>
+                
             </nav>
         </div>
     )
